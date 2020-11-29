@@ -1,0 +1,426 @@
+/*
+Theme name :
+Author: Amit
+Support: amitbd590@gmail.com
+Description :-----------
+Version:1.0
+*/
+
+/*CSS Index ------------
+
+1. Theme defaul css.
+2. Header.
+3. Slider.
+4. About-Area.
+5. Feature-Box.
+6. Department.
+7. Counter.
+8. Footer.
+
+*/
+
+
+
+/*1. Theme defaul css.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+}
+
+.f-left {
+	float: left;
+}
+
+.f-right {
+	float: right;
+}
+
+.fix {
+	overflow: hidden;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	color: black;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: normal;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 35px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+}
+
+p {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #7e7e7e;
+	margin-bottom: 15px;
+}
+
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0px;
+}
+
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+
+::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+
+.theme-overlay {
+	position: relative;
+}
+
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/****************/
+
+
+
+/*header*/
+
+/* Nav Bar  */
+
+html{
+	scroll-behavior: smooth;
+}
+
+.navbar {
+	background: #131313;
+	padding: 1rem 8rem;
+	z-index: 1000;
+}
+
+.navbar .navbar-brand {
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+
+#navbarSupportedContent>ul>li:nth-child(n)>a {
+	color: #fff;
+	font-size: 1.1rem;
+	padding: .5rem .8rem;
+}
+
+#navbarSupportedContent>ul>li:nth-child(n)>a:hover,
+#navbarSupportedContent>ul>li:nth-child(n)>a:active{
+	color: #00bf85;
+}
+
+#navbarSupportedContent>button {
+	background: #00BF85;
+	font-weight: 600;
+	padding: 0.4rem 1.4rem;
+	border-radius: 30px;
+}
+#navbarSupportedContent>button:hover {
+	background: #ffffff;
+}
+
+/* Navbar Mid  */
+
+.mid {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.mid>video {
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.mid .hero {
+	position: relative;
+	margin-top: 12rem;
+}
+
+.mid .hero p {
+	width: 55%;
+	font-size: 1.1rem;
+	letter-spacing: 0.2px;
+	padding-bottom: 1rem;
+}
+
+.mid .hero a {
+	background: #00BF85;
+	font-weight: 600;
+	padding: 0.6rem 1.4rem;
+	border-radius: 30px;
+	text-decoration: none;
+}
+
+.mid .hero a:hover {
+	background: #ffffff;
+
+}
+/* About section  */
+.about {
+	background: #000;
+}
+
+.about .text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: auto;
+}
+
+.about .text h6 {
+	color: #00BF7F;
+	font-weight: 800;
+	font-size: 1rem;
+	letter-spacing: 2px;
+}
+
+.about .text h2 {
+	color: #F7F5F4;
+	font-weight: 700;
+	font-size: 2rem;
+
+}
+
+.about .text p {
+	color: #F7F5F4;
+	font-weight: 700;
+	font-size: 1rem;
+
+}
+
+.about .text a {
+	background: #00BF85;
+	font-weight: 600;
+	padding: 0.6rem 1.4rem;
+	border-radius: 30px;
+	text-decoration: none;
+	color: #111;
+}
+.about .text a:hover {
+	background: #ffffff;
+}
+/* Discover section  */
+
+.discover .text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: auto;
+}
+.discover .text h6 {
+	color: #00BF7F;
+	font-weight: 800;
+	font-size: 1rem;
+	letter-spacing: 2px;
+}
+.discover .text h2 {
+	color: #111111;
+	font-weight: 700;
+	font-size: 2rem;
+}
+.discover .text p {
+	color: #6d6d6d;
+	font-weight: 700;
+	font-size: 1rem;
+}
+.discover .text a {
+	background: #202020;
+	font-weight: 600;
+	padding: 0.6rem 1.4rem;
+	border-radius: 30px;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+
+}
+.discover .text a:hover {
+	background: #00BF7F;
+}
+/* service section  */
+
+.service{
+	background: #000;
+}
+.service .heading h2{
+color: #fff;
+}
+.service .one{
+background: #fff;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin: 10px;
+padding: 20px 0px;
+border-radius: 10px;
+}
+
+/* Discover section  */
+
+.sing .text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: auto;
+}
+.sing .text h6 {
+	color: #00BF7F;
+	font-weight: 800;
+	font-size: 1rem;
+	letter-spacing: 2px;
+}
+.sing .text h2 {
+	color: #111111;
+	font-weight: 700;
+	font-size: 2rem;
+}
+.sing .text p {
+	color: #6d6d6d;
+	font-weight: 700;
+	font-size: 1rem;
+}
+.sing .text a {
+	background: #202020;
+	font-weight: 600;
+	padding: 0.6rem 1.4rem;
+	border-radius: 30px;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+
+}
+.sing .text a:hover {
+	background: #00BF7F;
+}
+
+body > footer{
+	background: #111 !important;
+}
+body > footer .text{
+	background: #00BF7F;
+}
+
+
+
+
+
+
+
+
+/* 
+/* Media  */
+@media screen and (max-width: 576px) {
+	.navbar {	
+		padding: 1rem 1rem;	
+	}
+
+	
+  } 
